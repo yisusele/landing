@@ -43,38 +43,47 @@ header{
        
     background-color: var(--negro);
     padding: 10px;
-    /* width: 90hv; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    padding-right: 3%;
+    
+    
 }
 
-
 .menu-contenedor{
+    padding-top: 10px;
     background-color: var(--seccion);
-    height: 50px;
+    height: 50px;   
+    
+}
+
+.menu-contenedor .navbar{
+    margin-left: 2%;
+    margin-right: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+   
 }
 
-.menmu-contener .menu .navbar ul li {
-    position: relative;
-    float: left;
+.menu-contenedor .menu{
+
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
-.menu .navbar ul li a{
-    color: var(--blanco);
-    font-size: 18px;
-    padding: 10%;
-    display: block;
-}
+.link1 {
+    color: white;
+    margin-left: 20px;
+    transition: color 0.3s;
 
+}
+.link1:hover{
+    color:var(--acento);
+}
 
 
 .main{
@@ -93,6 +102,7 @@ header{
 }
 
 .main .main-contenedor{
+    
     color: var(--blanco);
     background-color: #0707077c;
     padding: 10px;
@@ -121,11 +131,13 @@ header{
 }
 
 .ttp{
+    padding-left: 1%;
     font-size: 40px ;
     text-align: left;
     
 }
 .prr{
+    padding-left: 1%;
     font-size: 20px;
     line-height: 35px;
 }
@@ -343,6 +355,7 @@ p, a, li{
 }
 
 #title-footer{
+    width: 100%;
     background-color: var(--seccion);
     color: var(--blanco);
     padding: 10px;
@@ -375,13 +388,10 @@ p, a, li{
     h1, h2, h3, h4, h5, h6{
 
         font-family: sans-serif;    
-        text-align: center;
-        font-size: 10px;
-    
+        text-align: center;    
     }
     
     p, a, li{
-    
         font-family: Arial;
     
     }
