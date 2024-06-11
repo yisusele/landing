@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    vertical-align: baseline;
+    
+}
+
+:root {
+    --negro: #000000;
+    --seccion:#000000e2;
+    --blanco: #ececec;
+    --sombra-ppal: #a1a1a1;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+    --acento: #AB241F;
+}
+
+
+html{
+
+   background-image: url(img/fondo.png);
+   background-size:cover;
+   background-repeat: no-repeat;
+   max-width: 100%;
+   margin: 0 auto;
+   color: var(--blanco);
+   
+}
+
+header{
+       
+    background-color: var(--negro);
+    padding: 10px;
+    padding-right: 3%;
+    
+    
+}
+
+.menu-contenedor{
+    padding-top: 10px;
+    
+    height: 50px;   
+    
+}
+
+.menu-contenedor .navbar{
+    margin-left: 2%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.menu-contenedor .menu{
+
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.link1 {
+    color: white;
+    margin-left: 20px;
+    transition: color 0.3s;
+
+}
+.link1:hover{
+    color:var(--acento);
+}
+
+
+.main{
+    height: 80%;
+    background-image: url(img/bg.png);
+    background-position: top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: left;
+    min-height: 70vh;
+    overflow: hidden;
+}
+
+.main .main-contenedor{
+    
+    color: var(--blanco);
+    width: 50%;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.573), transparent), url(img/fnmain.png);      
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    
+}
+
+.main .btn1{
+   
+    display: inline-block;
+    align-items: start;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--blanco);
+    box-shadow: 1px 1px 0 var(--seccion);
+    background-color: var(--acento);
+    width: 300px;
+    height: 70px;
+    margin: 5%;
+    padding: 10px;
+  
+}
+
+.cursiva{
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+.ttp{
+    margin-left: 5%;
+    font-size: 40px ;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    justify-content: left;
+ 
+    
+}
+.prr{
+    margin-left: 5%;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p, a, li{
+    font-family: Arial;
+}
+
+.footer{
+    height: 50;
+}
+
+.link{
+    background-color: var(--seccion);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    width: 90hv;
+    height: 50px;
+    
+}
+
+#title-footer{
+    width: 100%;
+    height: 50px;
+    background-color: var(--seccion);
+    color: var(--blanco);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#fin{
+
+    width: 100%;
+    height: 35px;
+    background-color: var(--seccion);
+    color: var(--blanco);
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+
+#name-placeholder{
+    font-size: 38;
+    font-weight: 300;
+
+}
+
+@media (max-width: 768px) {
+
+    .main{
+        height: 90%;
+        background-image: url(img/bg.png);
+        background-position: top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        min-height: 70vh;
+        overflow: hidden;
+    }
+    
+    .main .main-contenedor{
+        
+        color: var(--blanco);
+        width: 100%;
+        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.573), transparent), url(img/fnmain.png);      
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: left;
+        
+    }
+
+
+    .menu-contenedor .navbar .levelup img{
+        max-width: 120%;
+        height: auto;
+
+    }
+
+    .menu-contenedor .navbar .menu{
+        margin-left: 20px;
+        padding: 10;
+            
+    }
+    
+   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+
+
+}
